@@ -6,12 +6,12 @@ fun main() {
     car.carry(34)
     car.carry(45)
     car.identity()
-    println("The parking fees is " +car.calculateParkingFees(4)+"RWF")
+    println("The parking fees for a car is " +car.calculateParkingFees(4)+" RWF")
 
 
     var bus= Bus("Ritco","zhonda","cyan",95)
     println("The maximum fare per trip is " +bus.maxTripFare(arrayOf(13.5,56.5,23.0,54.1,67.8)))
-    println("the parking fees for a bus is "+ bus.calculateParkingFees(4))
+    println("the parking fees for a bus is "+ bus.calculateParkingFees(4)+" RWF")
 
 }
 

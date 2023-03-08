@@ -2,9 +2,10 @@
 
 
 fun main() {
-    var car = Car("Toyota","new model","blue",54)
+    var car = Car("Toyota","new model","blue",35)
     car.carry(34)
     car.carry(45)
+    car.carry(78)
     car.identity()
     println("The parking fees for a car is " +car.calculateParkingFees(4)+" RWF")
 
@@ -25,7 +26,8 @@ open class Car(var make:String, var model:String, var color:String, var capacity
             println("carrying $people passengers")
         }
         else{
-            println("overcapacity by $people people")
+            var x=people-capacity
+            println("overcapacity by $x people")
         }
     }
     fun identity(){
